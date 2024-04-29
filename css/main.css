@@ -60,7 +60,7 @@ h3 {
 .navbar-nav .nav-link{
     color: #3D0043;
     font-weight: 300;
-    font-size: 22px;
+    font-size: 32px;
 }
 
 .navbar-toggler {
@@ -91,8 +91,12 @@ h3 {
 }
 
 #navContent {
-    margin-left: 300px;
+    display: flex;
+    position: relative;
+    align-items: end;
 }
+
+
 
 
 
@@ -587,6 +591,10 @@ td.today {
 }
 /* Portfolio */
 
+.none {
+    display: none;
+}
+
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
 .carousel-inner .carousel-item-prev {
@@ -641,6 +649,32 @@ transform: translateX(0);
 
 .portfolio {
     margin-top: 0;
+}
+
+.navbar-toggler-icon {
+    width: 50px;
+    height: 40px;
+}
+
+.navbar-nav>li>a {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    padding: 0 40px;
+    height: 500px;
+    top: -15px;
+    right: -130px;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.navbar-collapse.collapse {
+    display: flex !important;
 }
 
 
