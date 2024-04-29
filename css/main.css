@@ -610,7 +610,7 @@ transform: translateX(0);
 }
 
 .about {
-    padding-top: 50px;
+    padding-top: 0;
 }
 
 .flex_column {
@@ -619,6 +619,10 @@ transform: translateX(0);
 
 .w100 {
     width: 100%;
+}
+
+.w30 {
+    width: 30%;
 }
 
 .btn_1, .btn_2, .btn_3, .btn_4, .btn_5, .btn_6, .btn_7, .btn_8, .btn_9, .btn_10, .btn_11 {
@@ -633,6 +637,10 @@ transform: translateX(0);
     border-radius: 40px;
     transition:all 0.5s ease;
     line-height: 160%;
+}
+
+.portfolio {
+    margin-top: 0;
 }
 
 
