@@ -190,3 +190,11 @@ window.onload = function() {
 function getId(id) {
   return document.getElementById(id);
 }
+
+
+const burgerBtn = document.querySelector('.navbar-toggler'),
+      burgerMenu = document.querySelector('.navbar-nav');
+
+burgerBtn.addEventListener('click', () => {
+  burgerMenu.classList.toggle('none')
+})
