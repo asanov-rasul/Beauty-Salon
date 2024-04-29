@@ -63,6 +63,10 @@ h3 {
     font-size: 22px;
 }
 
+.navbar-toggler {
+
+}
+
 .navbar-nav .nav-link:hover{
     color: #00ADC6;
 }
@@ -605,7 +609,31 @@ td.today {
 transform: translateX(0);
 }
 
+.about {
+    padding-top: 50px;
+}
 
+.flex_column {
+    flex-direction: column;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.btn_1, .btn_2, .btn_3, .btn_4, .btn_5, .btn_6, .btn_7, .btn_8, .btn_9, .btn_10, .btn_11 {
+    background: rgba(0, 0, 0, 0.04);
+    color: #4D3D5B;
+    font-weight: 400;
+    font-size: 26px;
+    padding: 10px 20px;
+    margin: 10px 5px 10px auto;
+    border: none;
+    display: inline;
+    border-radius: 40px;
+    transition:all 0.5s ease;
+    line-height: 160%;
+}
 
 
 .card {
