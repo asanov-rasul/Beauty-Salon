@@ -54,7 +54,7 @@ h3 {
 
 .navbar {
     background-color: rgba(255, 255, 255, 0.7);
-    height: 80px;
+    height: 120px;
 }
 
 .navbar-nav .nav-link{
@@ -592,7 +592,7 @@ td.today {
 /* Portfolio */
 
 .none {
-    display: none;
+    display: none !important;
 }
 
 .carousel-inner .carousel-item.active,
@@ -667,7 +667,7 @@ transform: translateX(0);
     position: absolute;
     padding: 0 40px;
     height: 500px;
-    top: -15px;
+    top: 15px;
     right: -130px;
     background-color: #fff;
     z-index: 2;
@@ -675,6 +675,11 @@ transform: translateX(0);
 
 .navbar-collapse.collapse {
     display: flex !important;
+}
+
+.logo {
+    width: 220px;
+    height: 120px;
 }
 
 
