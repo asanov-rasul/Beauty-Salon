@@ -6,6 +6,10 @@ const modalOpenBtn = document.querySelector('#btn-open-modal'),
       modalThree = document.querySelector('#modal-three'),
       modalEnd = document.querySelectorAll('.modal-btn-end'),
       modalNext = document.querySelectorAll('.modal-btn-next'),
+      modalSend = document.querySelector('.modal-btn-send'),
+      myList = document.querySelector('#myList'),
+      listClock = document.querySelector('.modal-time-list'),
+
       body = document.querySelector('body');
 
 modalOpenBtn.addEventListener('click', () => {
@@ -30,32 +34,52 @@ modalCloseBtn.forEach(item => {
 
 modalEnd.forEach(item => {
   item.addEventListener('click', () => {
-    if (modalOne.style.display = 'block') {
+    if (modalOne.style.display == 'block') {
       modalClose();
-    } else if (modalTwo.style.display = 'block') {
+    } else if (modalTwo.style.display == 'block') {
       modalTwo.style.display = 'none';
       modalOne.style.display = 'block';
-    } else if (modalThree.style.display = 'block') {
+    } else if (modalThree.style.display == 'block') {
       modalThree.style.display = 'none';
       modalTwo.style.display = 'block';
       modalOne.style.display = 'none';
+      modalNext.forEach(i => {
+        i.style.display = 'block'
+      })
+      modalSend.style.display = 'none';
     }
   })
 })
 
 modalNext.forEach(item => {
   item.addEventListener('click', () => {
-    if (modalOne.style.display = 'block') {
+    if (modalOne.style.display == 'block') {
       modalOne.style.display = 'none';
       modalTwo.style.display = 'block';
-    } else if (modalTwo.style.display = 'block') {
+    } else if (modalTwo.style.display == 'block') {
       modalTwo.style.display = 'none';
       modalOne.style.display = 'none';
       modalThree.style.display = 'block';
-    } else if (modalThree.style.display = 'block') {
+      modalNext.forEach(i => {
+        i.style.display = 'none'
+      })
+      modalSend.style.display = 'block';
+    } else if (modalThree.style.display == 'block') {
       closeModal();
     }
   })
+})
+
+myList.addEventListener('click', (event) => {
+  if(event.target.classList.contains('list-group-item')) {
+    event.target.classList.toggle('active-li')
+  }
+})
+
+listClock.addEventListener('click', (event) => {
+  if(event.target.classList.contains('modal-time-item')) {
+    event.target.classList.toggle('active-li')
+  }
 })
 
 
