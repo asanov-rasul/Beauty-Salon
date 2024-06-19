@@ -48,7 +48,7 @@ h3 {
 }
 
 /* Header */
-.header {
+#header {
     height: 100vh;
 }
 
