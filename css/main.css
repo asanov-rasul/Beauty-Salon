@@ -60,7 +60,7 @@ h3 {
 .navbar-nav .nav-link{
     color: #3D0043;
     font-weight: 300;
-    font-size: 32px;
+    font-size: 42px;
 }
 
 .navbar-toggler {
@@ -72,7 +72,7 @@ h3 {
 }
 
 .nav-item {
-    margin-right: 6%;
+    margin: 0 0 15px 6%;
 
 }
 
@@ -101,7 +101,6 @@ h3 {
 
 
 .vh-dependent {
-    height: 60vh;
     display: flex;
     align-items: center;
 }
@@ -525,7 +524,6 @@ td.today {
 /* Services */
 .services {
     margin-top: 84px;
-    height: 60vh;
     display: flex;
     align-items: center;
 }
@@ -581,7 +579,6 @@ td.today {
 .portfolio {
     margin-top: 84px;
     padding: 0px 80px;
-    /* height: 60vh; */
     display:block;
     align-items: center;
 }
@@ -615,6 +612,10 @@ td.today {
 .carousel-inner .carousel-item-end,
 .carousel-inner .carousel-item-start {
 transform: translateX(0);
+}
+
+#header {
+    height: 750px;   
 }
 
 .about {
@@ -663,10 +664,11 @@ transform: translateX(0);
 
 .navbar-nav {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     position: absolute;
-    padding: 0 40px;
-    height: 500px;
+    padding: 30px 40px;
+    width: 80%;
+    height: 100vh;
     top: 5px;
     right: -130px;
     background-color: #fff;
@@ -891,7 +893,7 @@ transform: translateX(0);
 
 /* Footer */
 footer {
-    padding: 100px 50px 30px 100px;
+    padding: 50px 50px 30px 100px;
     min-height: 566px;
     
     ;
