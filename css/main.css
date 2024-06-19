@@ -63,10 +63,6 @@ h3 {
     font-size: 42px;
 }
 
-.navbar-toggler {
-
-}
-
 .navbar-nav .nav-link:hover{
     color: #00ADC6;
 }
@@ -185,11 +181,14 @@ h3 {
     box-shadow: none;
 }
 
+.search-input{
+    display: flex;
+    flex-direction: row;
+}
+
 .search-icon {
     width: 18px;
-    position: absolute;
-    top: 15%;
-    left: 32px;
+    transform: translate(20px, -5px);
 }
 
 .modalwindow-contant {
@@ -245,11 +244,17 @@ h3 {
     outline: none;
     user-select: none;
     cursor: pointer;
+    transition: .5s;
 }
 
 .list-group-item:hover {
+    opacity: .6;
+}
+
+.active-li {
     background-color: #90007F;
-    color: white;
+    color: white !important;
+    transition: .2s;
 }
 
 .closemodal {
@@ -261,7 +266,7 @@ h3 {
     cursor: pointer;
     border: none;
     background-color: rgba(0, 0, 0, 0);
-    background-image: url(img/icons/Group\ 67.svg);
+    background-image: url(../img/icons/Group67.svg);
     background-size: 25px 25px;
 }
 
@@ -500,6 +505,23 @@ td.today {
 }
 
 .modal-btn-next:hover {
+    background-color: #90007F;
+    color: white;
+}
+
+.modal-btn-send {
+    position: absolute;
+    right: 55px;
+    bottom: 80px;
+    padding: 8px 30px;
+    color: #90007F;
+    background-color: #fff;
+    border: 1px solid #90007F;
+    border-radius: 40px;
+    display: none;
+}
+
+.modal-btn-send:hover {
     background-color: #90007F;
     color: white;
 }
