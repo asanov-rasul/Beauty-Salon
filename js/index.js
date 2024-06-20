@@ -16,6 +16,8 @@ modalOpenBtn.addEventListener('click', () => {
   modal.style.display = 'block';
   modalOne.style.display = 'block';
   body.style.overflow = 'hidden';
+  modalNext.style.display = 'block';
+  modalSend.style.display = 'none';
 })
 
 function modalClose() {
