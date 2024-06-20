@@ -16,7 +16,9 @@ modalOpenBtn.addEventListener('click', () => {
   modal.style.display = 'block';
   modalOne.style.display = 'block';
   body.style.overflow = 'hidden';
-  modalNext.style.display = 'block';
+  modalNext.forEach(item => {
+    item.style.display = 'block';
+  })
   modalSend.style.display = 'none';
 })
 
@@ -55,26 +57,33 @@ modalEnd.forEach(item => {
 
 modalNext.forEach(item => {
   item.addEventListener('click', () => {
-    if (modalOne.style.display == 'block') {
-      modalOne.style.display = 'none';
-      modalTwo.style.display = 'block';
-    } else if (modalTwo.style.display == 'block') {
-      modalTwo.style.display = 'none';
-      modalOne.style.display = 'none';
-      modalThree.style.display = 'block';
-      modalNext.forEach(i => {
-        i.style.display = 'none'
-      })
-      modalSend.style.display = 'block';
-    } else if (modalThree.style.display == 'block') {
-      closeModal();
-    }
+        if (modalOne.style.display == 'block') {
+          myList.querySelectorAll('li').forEach(el => {
+            if (el.classList.contains('active-li')) {
+              modalOne.style.display = 'none';
+              modalTwo.style.display = 'block';
+            }
+          })
+        } else if (modalTwo.style.display == 'block') {
+          modalTwo.style.display = 'none';
+          modalOne.style.display = 'none';
+          modalThree.style.display = 'block';
+          modalNext.forEach(i => {
+            i.style.display = 'none'
+          })
+          modalSend.style.display = 'block';
+        } else if (modalThree.style.display == 'block') {
+          closeModal();
+        }
   })
 })
 
 myList.addEventListener('click', (event) => {
-  if(event.target.classList.contains('list-group-item')) {
-    event.target.classList.toggle('active-li')
+  if(event.target.closest('li')) {
+    if (event.target.classList.contains('list-group-item')) {
+      event.target.classList.toggle('active-li')
+    } else if (event.target.classList.contains('item-name') || event.target.classList.contains('item-price'))
+    event.target.parentNode.classList.toggle('active-li')
   }
 })
 
