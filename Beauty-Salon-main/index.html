@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Beauty Salon</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;900&family=Source+Serif+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="blur">
+            <header id="header">
+                <nav class="navbar navbar-expand-lg navbar-body">
+                    <div class="container">
+                        <div class="col-md-2 logo">
+                            <img src="img/logo.svg" class="navbar-brand">
+                        </div>
+                        
+                        <button class="navbar-toggler" type="button">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navContent">
+                            <ul class="navbar-nav col-md-7 none">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">О&nbsp;салоне</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#services">Услуги</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#portfolio">Портфолио</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#reviews">Отзывы</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#footer">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="offer">
+                <div class="container">
+                    <div class="row container-offer">
+                        <div class="col-md-6 vh-dependent">
+                            <div class="offer-cont">
+                                <h1 class="offer-cont__title">
+                                    Салон красоты
+                                </h1>
+                                <p class="offer-cont__text">
+                                    Красота внутри тебя
+                                </p>
+                                <button class="offer-cont__btn" id="btn-open-modal">
+                                    Записаться
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </header>
+            <main>
+                <div id="about" class="about">
+                    <div class="container">
+                        <div class="row">
+                            <h2 class="about__title">
+                                О салоне
+                            </h2>
+                            <p class="about__text col-md-12">
+                                Настоящая находка для тех, кто ценит свое время, так как здесь оказывают обширный комплекс бьюти-услуг. То что нужно каждой женщине: маникюр, педикюр, окрашивание волос, стрижки, перманент бровей, губ и ресниц... Более 1000 клиентов посетили наш салон, и вы не останетесь равнодушными!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="services" class="services">
+                    <div class="container container-without-left-margin mx-auto my-auto">
+                        <div class="row flex_column">
+                            <img class="col-md-6 w100" src="./img/picturs/services.jpg" alt="">
+                            <!-- <div class="col-md-6 be-static">
+                                <div class="services__pictur">
+
+                                </div>
+                            </div> -->
+                            <div class="col-md-5 w100">
+                                <h2 class="services__title">
+                                    Услуги
+                                </h2>
+                                <div class="btn_s">
+                                    <button class="btn_1">
+                                        Маникюр
+                                    </button>
+                                    <button class="btn_2">
+                                        Педикюр
+                                    </button>
+                                    <button class="btn_3">
+                                        Шугаринг
+                                    </button>
+                                    <button class="btn_4">
+                                        Наращивание ресниц
+                                    </button>
+                                    <button class="btn_5">
+                                        Перманент
+                                    </button>
+                                    <button class="btn_6">
+                                        Стрижки
+                                    </button>
+                                    <button class="btn_7">
+                                        Массаж
+                                    </button>
+                                    <button class="btn_8">
+                                        Брови / Ресницы
+                                    </button>
+                                    <button class="btn_9">
+                                        Макияж
+                                    </button>
+                                    <button class="btn_10">
+                                        Прически / Уход / Окрашивание волос
+                                    </button>
+                                    <button class="btn_11">
+                                        Лазер ScinOne X
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="portfolio" class="portfolio">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h2 class="portfolio__title">
+                                    Портфолио
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center my-4"> 
+                        <div class="row mx-auto my-auto justify-content-center portfolio__carousel">
+                            <div id="recipeCarousel" class="carousel carousel1 slide" data-bs-ride="carousel">
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item carousel-item1 active">
+                                        <div class="col-md-4">
+                                            <div class="card">
+                                                <figure class="effect-text-one">
+                                                    <img src="img/picturs/Portfolio01.jpg" class="d-block w-100">
+                                                    
+                                                    <div class="card-description">Перманентный макияж</div>
+                                                    <!-- <figcaption>
+                                                        <p>Перманентный макияж</p>
+                                                    </figcaption> -->
+                                                </figure>
+                                            </div>
+                                            <div class="card">
+                                                <figure class="effect-text-one">
+                                                    <div class="card-img">
+                                                        <img src="img/picturs/Portfolio02.jpg" class="d-block w-100">
+                                                    </div>
+                                                    <div class="card-description">Перманентный макияж</div>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-md-4">
+                                            <div class="card">
+                                                <figure class="effect-text-one">
+                                                    <div class="card-img">
+                                                        <img src="img/picturs/Portfolio03.jpg" class="d-block w-100">
+                                                    </div>
+                                                    <div class="card-description">Перманентный макияж</div>
+                                                </figure>
+                                            </div>
+                                            <div class="card">
+                                                <figure class="effect-text-one">
+                                                    <div class="card-img">
+                                                        <img src="img/picturs/Portfolio04.jpg" class="d-block w-100">
+                                                    </div>
+                                                    <div class="card-description">Перманентный макияж</div>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-md-4">
+                                            <div class="card">
+                                                <figure class="effect-text-one">
+                                                    <div class="card-img">
+                                                        <img src="img/picturs/Portfolio05.jpg" class="d-block w-100">
+                                                    </div>
+                                                    <div class="card-description">Перманентный макияж</div>
+                                                </figure>
+                                            </div>
+                                            <div class="card">
+                                                <figure class="effect-text-one">
+                                                    <div class="card-img">
+                                                        <img src="img/picturs/Portfolio06.jpg" class="d-block w-100">
+                                                    </div>
+                                                    <div class="card-description">Перманентный макияж</div>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-md-4">
+                                            <div class="card">
+                                                <figure class="effect-text-one">
+                                                    <div class="card-img">
+                                                        <img src="img/picturs/Portfolio07.jpg" class="d-block w-100">
+                                                    </div>
+                                                    <div class="card-description">Перманентный макияж</div>
+                                                </figure>
+                                            </div>
+                                            <div class="card">
+                                                <figure class="effect-text-one">
+                                                    <div class="card-img">
+                                                        <img src="img/picturs/Portfolio08.jpg" class="d-block w-100">
+                                                    </div>
+                                                    <div class="card-description">Перманентный макияж</div>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="col-md-4">
+                                            <div class="card">
+                                                <figure class="effect-text-one">
+                                                    <div class="card-img">
+                                                        <img src="img/picturs/Portfolio09.jpg" class="d-block w-100">
+                                                    </div>
+                                                    <div class="card-description">Перманентный макияж</div>
+                                                </figure>
+                                            </div>
+                                            <div class="card">
+                                                <figure class="effect-text-one">
+                                                    <div class="card-img">
+                                                        <img src="img/picturs/Portfolio10.jpg" class="d-block w-100">
+                                                    </div>
+                                                    <div class="card-description">Перманентный макияж</div>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </a>
+                                <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </a>
+                            </div>
+                        </div>      
+                    </div>
+                </div>
+
+                <div class="interior">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <h2 class="interior__title">
+                                    Интерьер салона
+                                </h2>
+                                <p class="interior__text">Наш салон встречает своих посетителей современным дизайном и атмосферой уюта: светлое пространство, красивая мебель. Это отличное место для того, чтобы посвятить пару часов только себе.</p>
+                            </div>
+                            <div class="col-md-6 interior__fotorama">
+                                <div class="fotorama" data-nav="thumbs" data-autoplay="true" data-allowfullscreen="true">
+                                    <img src="img/picturs/interior01.jpg">
+                                    <img src="img/picturs/interior02.jpg">
+                                    <img src="img/picturs/interior03.jpg">
+                                    <img src="img/picturs/interior04.jpg">
+                                    <img src="img/picturs/interior05.jpg">
+                                    <img src="img/picturs/interior06.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- <div class="testimonials-section sec-padding" id="testimonials">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <h2 class="rewiews__title">
+                                    Отзывы
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="testi-block">
+                            <div class="testi-item">
+                                <div class="testi-author">
+                                    <div class="testi-author-img">
+                                        <img src="img/picturs/interior01.jpg" alt="" class="testi-img">
+                                    </div>
+                                    <div class="testi-author-name">
+                                        <h3>Имя</h3>
+                                        <h3>Фамилия</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>Наш салон встречает своих посетителей современным дизайном и атмосферой уюта: небольшое светлое пространство, лучшая мебель. Это отличное место для того, чтобы посвятить паруацйацй часов только себе.</p>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div> -->
+                
+                <div id="reviews" class="reviews">
+                    <div class="container">
+                        
+                                <h2>
+                                    Отзывы
+                                </h2>
+                        
+                    <div class="reviews-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <article class="swiper-slide review">
+                        
+                            
+                                
+                                
+                                    <div class="testi-item">
+                                        <div class="testi-author">
+                                            <div class="testi-author-img">
+                                                <img src="img/picturs/interior01.jpg" alt="" class="testi-img">
+                                            </div>
+                                            <div class="testi-author-info">
+                                                <h3 class="testi-author-name">Имя</h3>
+                                                <h3 class="testi-author-surname">Фамилия</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 w30">
+                                            <p>Наш салон встречает своих посетителей современным дизайном и атмосферой уюта: небольшое светлое пространство, лучшая мебель. Это отличное место для того, чтобы посвятить паруацйацй часов только себе.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                
+                            
+                        </article>
+                        
+                        <article class="swiper-slide review">
+                        
+                            
+                                
+                            <div class="testi-item">
+                                <div class="testi-author">
+                                    <div class="testi-author-img">
+                                        <img src="img/picturs/interior01.jpg" alt="" class="testi-img">
+                                    </div>
+                                    <div class="testi-author-info">
+                                        <h3 class="testi-author-name">Имя</h3>
+                                        <h3 class="testi-author-surname">Фамилия</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 w30">
+                                    <p>Наш салон встречает своих посетителей современным дизайном и атмосферой уюта: небольшое светлое пространство, лучшая мебель. Это отличное место для того, чтобы посвятить паруацйацй часов только себе.</p>
+                                </div>
+                            </div>
+                        
+                    </article>
+                    <article class="swiper-slide review">
+                        
+                            
+                                
+                        <div class="testi-item">
+                            <div class="testi-author">
+                                <div class="testi-author-img">
+                                    <img src="img/picturs/interior01.jpg" alt="" class="testi-img">
+                                </div>
+                                <div class="testi-author-info">
+                                    <h3 class="testi-author-name">Имя</h3>
+                                    <h3 class="testi-author-surname">Фамилия</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-6 w30">
+                                <p>Наш салон встречает своих посетителей современным дизайном и атмосферой уюта: небольшое светлое пространство, лучшая мебель. Это отличное место для того, чтобы посвятить паруацйацй часов только себе.</p>
+                            </div>
+                        </div>
+                            
+                            
+                        
+                    
+                    </article>
+                    
+                    </div>
+                </section>
+                
+            
+            </main>
+
+            <footer id="footer">
+                <div class="footer-content">
+                    <div class="footer-map">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A893d20b1dbb855c0479ebbea6d9875546039c0cd1b0d012a0fdee46ce90a6b19&amp;source=constructor" width="100%" height="566" frameborder="0"></iframe>
+                    </div>
+                    <div class="footer-text">
+                        <h2>Контакты</h2>
+                        <p>г. Иркутск <br>
+                        Радужный микрорайон д. 119 <br>
+                        Вход с торца дома <br></p> 
+                        <a href="tel:+70123456789" class="tel">+7 012 345 67 89</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="modalwindow" id="modalwindow">
+        <!-- Modal1 -->
+        <div class="modalwindow-container" id="modal-one">
+                <img class="modalwindow-img" src="img/picturs/Mask group.webp" alt="">
+                <div class="modalwindow-contant">
+                    <div class="modalwindow-flex-heading">
+                        <p class="modalwindow-heading heading-margin-bottom">Выбор услуги</p>
+                        <div class="modalwindow-step">Шаг 1 из 3</div>
+                    </div>
+                    <div class="search-input">
+                        <img src="img/icons/Group 10.svg" alt="search" class="search-icon">
+                        <input type="text" placeholder="Поиск по услугам" class="form-control" id="myInput" type="text">
+                    </div>
+                    <ul class="list-group" id="myList">
+                        <li class="list-group-item">
+                            <div class="item-name">Маникюр</div>
+                            <div class="item-price">200 руб.</div>
+                        </li>
+                        <li class="list-group-item" data-item>
+                            <div class="item-name">Педикюр</div>
+                            <div class="item-price">200 руб.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="item-name">Шугаринг</div>
+                            <div class="item-price">200 руб.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="item-name">Наращивание ресниц</div>
+                            <div class="item-price">200 руб.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="item-name">Перманент</div>
+                            <div class="item-price">200 руб.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="item-name">Стрижки</div>
+                            <div class="item-price">200 руб.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="item-name">Массаж</div>
+                            <div class="item-price">200 руб.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="item-name">Брови / Ресницы</div>
+                            <div class="item-price">200 руб.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="item-name">Макияж</div>
+                            <div class="item-price">200 руб.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="item-name">Причёски / Уход / Окрашивание волос</div>
+                            <div class="item-price">200 руб.</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="item-name">Лазер SkinOne X</div>
+                            <div class="item-price">200 руб.</div>
+                        </li>
+                    </ul>
+                    <button class="modal-btn-end">Назад</button>
+                    <button class="modal-btn-next">Далее</button>
+                    <button class="closemodal"></button>
+                </div>
+            </div>
+            <!-- Modal1 -->
+
+
+            <!-- Modal2 -->
+            <div class="modalwindow-container" id="modal-two">
+                <img class="modalwindow-img" src="img/picturs/Mask group.webp" alt="">
+                <div class="modalwindow-contant">
+                    <div class="modalwindow-flex-heading">
+                        <p class="modalwindow-heading">Выбор даты / время</p>
+                        <div class="modalwindow-step">Шаг 2 из 3</div>
+                    </div>
+                    <div class="modal-date">
+                        <div class="date-text">Дата</div>
+                    <div class="calendar-wrapper">
+                        <button id="btnPrev" type="button"><img src="img/icons/Rectangle 96.svg" alt="Предыдущий" class="icon-table"></button>
+                        <button id="btnNext" type="button"><img src="img/icons/Rectangle 96 (2).svg" alt="Следующий" class="icon-table"></button>
+                        <div id="divCal"></div>
+                    </div>
+                    </div>
+                    <div class="modal-time">
+                        <div class="time-text">Время</div>
+                    </div>
+                    <ul class="modal-time-list">
+                        <li class="modal-time-item">9:00</li>
+                        <li class="modal-time-item">9:30</li>
+                        <li class="modal-time-item">10:00</li>
+                        <li class="modal-time-item">11:30</li>
+                        <li class="modal-time-item">12:00</li>
+                        <li class="modal-time-item">13:30</li>
+                        <li class="modal-time-item">14:00</li>
+                        <li class="modal-time-item">15:30</li>
+                        <li class="modal-time-item">16:30</li>
+                        <li class="modal-time-item">17:30</li>
+                    </ul>
+                    <button class="modal-btn-end">Назад</button>
+                    <button class="modal-btn-next">Далее</button>
+                    <button class="closemodal"></button>
+                </div>
+            </div>
+            <!-- Modal2 -->
+            
+            
+            <!-- Modal3 -->
+            <div class="modalwindow-container" id="modal-three">
+                <img class="modalwindow-img" src="img/picturs/Mask group.webp" alt="">
+                <div class="modalwindow-contant">
+                    <div class="modalwindow-flex-heading">
+                        <p class="modalwindow-heading heading-margin-bottom">Контактные данные</p>
+                        <div class="modalwindow-step">Шаг 3 из 3</div>
+                    </div>
+                    <form action="#" class="modal-form">
+                        <div class="input-box">
+                            <input type="text" placeholder="Имя" id="name" class="modal-input">
+                            <label for="name" class="modal-lable">Имя</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" placeholder="Фамилия" id="surname" class="modal-input">
+                            <label for="surname" class="modal-lable">Фамилия</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" placeholder="Email@gmail.com" id="email" class="modal-input">
+                            <label for="email" class="modal-lable">Email</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" placeholder="+7 012 345 67 89" id="phone" class="modal-input">
+                            <label for="phone" class="modal-lable">Телефон</label>
+                        </div>
+                    </form>
+                    <div class="modal-remind">
+                        <strong class="modal-remind-text">Напомнить о записи</strong>
+                        <form action="#">
+                            <select name="city" list="cities" class="modal-remind-input">
+                                <option selected>За 1 день до визита</option>
+                                <option>За 3 дня до визита</option>
+                                <option>За 1 неделю до визита</option>
+                                <option>За 2 недели до визита</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="modal-discription">
+                        * При проверке деталей записи удостоверьтесь, что услуги, дата и время именно те, на которые вы хотите записаться. Нажимая «Записаться» Вы соглашаетесь с условиями <a href="">Пользовательского соглашения</a>
+                    </div>
+                    <button class="modal-btn-end">Назад</button>
+                    <button class="modal-btn-next">Далее</button>
+                    <button class="modal-btn-send">Отправить</button>
+                    <button class="closemodal"></button>
+                </div>
+            </div>
+            <!-- Modal3 -->
+        </div>
+
+        <a href="#" class="scrollup">Наверх</a>
+
+
+    <script>
+        let items = document.querySelectorAll('.carousel1 .carousel-item')
+        items.forEach((el) => {
+          const minPerSlide = 4
+          let next = el.nextElementSibling
+          for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                // wrap carousel by using first child
+                next = items[0]
+            }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+        }
+        })
+    </script>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js"></script>
+    
+    
+    <script>
+        const options = {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        //   loop: true,
+        //   centerSlide: 'true',
+          fade: 'true',
+          grabCursor: 'true',
+        //   pagination: {
+        //     el: ".swiper-pagination",
+        //     clickable: true,
+        //     dynamicBullets: true,
+        //   },
+        //   navigation: {
+        //     nextEl: ".swiper-button-next",
+        //     prevEl: ".swiper-button-prev",
+        //   },
+  
+          breakpoints: {
+    
+    // when window width is >= 480px
+    400: {
+      slidesPerView: 1,
+      spaceBetween: 0
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 0
+    },
+  },
+        }
+  
+        
+        var swiper = new Swiper(".reviews-content", {...options,
+        //   pagination: {
+        //   },
+          autoplay: {
+            delay: 5000,
+          },
+        //   navigation: {
+        //   },
+        });
+        
+        var myNav = document.getElementById('navContent');
+      window.onscroll = function () {
+          if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100 ) {
+              myNav.classList.add("nav-colored");
+              myNav.classList.remove("nav-transparent");
+          }
+          else {
+              myNav.classList.add("nav-transparent");
+              myNav.classList.remove("nav-colored");
+          }
+      };
+  
+      </script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+
+    
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+         
+        $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+        $('.scrollup').fadeIn();
+        } else {
+        $('.scrollup').fadeOut();
+        }
+        });
+         
+        $('.scrollup').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+        });
+         
+        });
+        </script>
+
+    <script>
+    $(document).ready(function(){
+      $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myList li").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <script src="js/index.js"></script>
+</body>
+</html>
