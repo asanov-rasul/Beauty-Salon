@@ -677,6 +677,27 @@ transform: translateX(0);
     line-height: 160%;
 }
 
+.modalwindow-img {
+    display: none;
+}
+
+.modalwindow-contant {
+    width: auto;
+}
+
+.closemodal {
+    left: 90%;
+}
+
+.modalwindow-step {
+    margin-right: 50px;
+    font-size: 26px;
+}
+
+.heading-margin-bottom {
+    font-size: 36px;
+}
+
 .portfolio {
     margin-top: 0;
 }
